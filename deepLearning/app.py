@@ -7,11 +7,11 @@ import json
 
 app=Flask(__name__)
 
-UPLOAD_FOLDER="static/uploads"
+UPLOAD_FOLDER="deepLearning/static/uploads"
 
 app.config['UPLOAD_FOLDER']=UPLOAD_FOLDER
 
-model=joblib.load("rf_tomato_model.pkl")
+model=joblib.load("deepLearning/rf_tomato_model.pkl")
 
 IMG_size=64
 
@@ -23,7 +23,7 @@ def preprocess_image(image_path):
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('deepLearning/templates/index.html')
 
 @app.route('/predict',methods=['post'])
 def predict():
@@ -45,7 +45,7 @@ def predict():
     result=class_name[prediction[0]]
 
     return render_template(
-        "result.html",
+        "deepLearning/templates/result.html",
         image_path=filepath,
         result=result
     )
