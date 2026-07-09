@@ -1,6 +1,6 @@
 from flask import Flask,render_template,request
 import os 
-import opencv-python-headless as cv2
+import opencv-python-headless
 import numpy as np
 import joblib
 import json
