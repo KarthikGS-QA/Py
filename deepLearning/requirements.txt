@@ -5,5 +5,5 @@ joblib
 scikit-learn
 pandas
 flask
-cv2
+opencv-python-headless
 json
