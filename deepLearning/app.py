@@ -5,7 +5,7 @@ import numpy as np
 import joblib
 import json
 
-app=Flask(__name__)
+# app=Flask(__name__)
 
 UPLOAD_FOLDER="deepLearning/static/uploads"
 
@@ -50,4 +50,4 @@ def predict():
         result=result
     )
 
-app.run(debug=True,host="0.0.0.0")
+# app.run(debug=True,host="0.0.0.0")
