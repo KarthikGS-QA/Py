@@ -6,9 +6,9 @@ from tensorflow.keras.models import load_model
 
 model = load_model("deepLearning/maternal_ann.keras", compile=False)
 
-scaler=joblib.load("scaler.pkl")
+scaler=joblib.load("deepLearning/scaler.pkl")
 
-encoder=joblib.load("label_encoder.pkl")
+encoder=joblib.load("deepLearning/label_encoder.pkl")
 
 
 age=st.number_input("Age : ",16,60,25)
