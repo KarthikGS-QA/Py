@@ -4,7 +4,7 @@ import joblib
 from tensorflow.keras.models import load_model
 
 
-model=load_model("./maternal_ann.keras")
+model = load_model("./maternal_ann.keras", compile=False)
 
 scaler=joblib.load("scaler.pkl")
 
