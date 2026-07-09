@@ -37,7 +37,7 @@ while True:
         roi=cv2.resize(roi,(300,300))
         
         random_num=random.randint(1,100)
-        fileName=f"./Dataset/2/person{random_num}.jpg"
+        fileName=f"./Dataset/4/person{random_num}.jpg"
 
         cv2.imwrite(fileName,roi)
 
